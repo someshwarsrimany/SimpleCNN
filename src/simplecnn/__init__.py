@@ -1,2 +1,3 @@
-def hello() -> str:
-    return "Hello from simplecnn!"
+from .main import main
+
+__all__ = ["main"]

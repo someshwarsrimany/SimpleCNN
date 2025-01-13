@@ -1,7 +1,10 @@
 [project]
 name = "simplecnn"
 version = "0.1.0"
-description = "Add your description here"
+description = """
+A lightweight project that implements a simple convolutional neural network (CNN) for image classification tasks using PyTorch.
+The focus is on learning basic deep learning concepts, training and evaluating CNN models, and applying them to datasets like CIFAR-10.
+"""
 dependencies = [
     "torch>=2.5.1",
     "torchvision>=0.20.1",
@@ -17,6 +20,9 @@ build-backend = "hatchling.build"
 [tool.rye]
 managed = true
 dev-dependencies = []
+
+[project.scripts]
+main = "simplecnn:main"
 
 [tool.hatch.metadata]
 allow-direct-references = true
